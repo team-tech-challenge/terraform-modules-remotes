@@ -19,7 +19,7 @@ variable "engine_version" {
 variable "tags" {
   description = "A map of tags to add to all resources"
   type        = map(string)
-  default     = {
+  default = {
     ManagedBy = "Terraform"
   }
 }

@@ -11,9 +11,9 @@ variable "name" {
 }
 
 variable "description" {
-    description = "The description of the security group"
-    type        = string
-    default     = null
+  description = "The description of the security group"
+  type        = string
+  default     = null
 }
 
 variable "vpc_id" {

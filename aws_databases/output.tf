@@ -15,35 +15,35 @@ output "rds_engine_version" {
 
 output "rds_db_name" {
   description = "The name of the database for the RDS instance"
-  value = length(aws_db_instance.this) > 0 ? aws_db_instance.this[0].db_name : null
+  value       = length(aws_db_instance.this) > 0 ? aws_db_instance.this[0].db_name : null
 }
 
 output "rds_instance_address" {
   description = "The address of the RDS instance"
-  sensitive = true
+  sensitive   = true
   value       = length(aws_db_instance.this) > 0 ? aws_db_instance.this[0].address : null
 }
 
 output "rds_instance_user" {
   description = "The username for the RDS instance"
-  sensitive = true
+  sensitive   = true
   value       = length(aws_db_instance.this) > 0 ? aws_db_instance.this[0].username : null
 }
 
 output "rds_instance_password" {
   description = "The password for the RDS instance"
   sensitive   = true
-  value = length(aws_db_instance.this) > 0 ? aws_db_instance.this[0].password : null
+  value       = length(aws_db_instance.this) > 0 ? aws_db_instance.this[0].password : null
 }
 
 output "rds_instance_port" {
   description = "The port for the RDS instance"
-  sensitive = true
+  sensitive   = true
   value       = length(aws_db_instance.this) > 0 ? aws_db_instance.this[0].port : null
 }
 
 output "db_password" {
   description = "The password for the RDS instance"
-  sensitive = true
-  value = length(random_password.this) > 0 ? random_password.this[0].result : null
+  sensitive   = true
+  value       = length(random_password.this) > 0 ? random_password.this[0].result : null
 }

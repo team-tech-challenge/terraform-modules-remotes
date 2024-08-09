@@ -7,7 +7,7 @@ variable "create_secret_version" {
 variable "secret_id" {
   description = "The secret ID"
   type        = string
-  default = null
+  default     = null
 }
 
 variable "secret_string" {

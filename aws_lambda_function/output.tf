@@ -26,25 +26,25 @@ output "Name" {
 
 output "Role" {
   description = "The IAM role attached to your Lambda Function."
-  value = length(aws_lambda_function.this) > 0 ? aws_lambda_function.this[0].role : ""
+  value       = length(aws_lambda_function.this) > 0 ? aws_lambda_function.this[0].role : ""
 }
 
 output "Memory" {
   description = "Amount of memory your Lambda Function has in MB."
-  value = length(aws_lambda_function.this) > 0 ? aws_lambda_function.this[0].memory_size : null
+  value       = length(aws_lambda_function.this) > 0 ? aws_lambda_function.this[0].memory_size : null
 }
 
 output "Description" {
   description = "Description of your Lambda Function."
-  value = length(aws_lambda_function.this) > 0 ? aws_lambda_function.this[0].description : ""
+  value       = length(aws_lambda_function.this) > 0 ? aws_lambda_function.this[0].description : ""
 }
 
 output "Image_URI" {
   description = "URI of the container image used for your Lambda Function."
-  value = length(aws_lambda_function.this) > 0 ? aws_lambda_function.this[0].image_uri : ""
+  value       = length(aws_lambda_function.this) > 0 ? aws_lambda_function.this[0].image_uri : ""
 }
 
 output "Tags" {
   description = "Tags assigned to your Lambda Function."
-  value = length(aws_lambda_function.this) > 0 ? aws_lambda_function.this[0].tags : {}
+  value       = length(aws_lambda_function.this) > 0 ? aws_lambda_function.this[0].tags : {}
 }
