@@ -89,6 +89,12 @@ The repository is structured as follows:
 │   ├── output.tf
 │   ├── variables.tf
 │   └── version.tf
+├── aws_internet_gateway
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
 ├── aws_lambda_event_source_mapping
 │   ├── README.md
 │   ├── main.tf
@@ -102,6 +108,24 @@ The repository is structured as follows:
 │   ├── variables.tf
 │   └── version.tf
 ├── aws_lambda_permission
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
+├── aws_nat_gateway
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
+├── aws_network_acl
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
+├── aws_route_table
 │   ├── README.md
 │   ├── main.tf
 │   ├── output.tf
@@ -125,7 +149,14 @@ The repository is structured as follows:
 │   ├── output.tf
 │   ├── variables.tf
 │   └── version.tf
+├── aws_subnets
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
 └── aws_vpc
+    ├── README.md
     ├── main.tf
     ├── output.tf
     ├── variables.tf
