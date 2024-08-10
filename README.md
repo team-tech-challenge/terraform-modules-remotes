@@ -5,7 +5,6 @@
 [![Terraform](https://img.shields.io/badge/Terraform-v1.0.0+-623CE4?logo=terraform)](https://img.shields.io/badge/Terraform-v1.0.0+-623CE4?logo=terraform)
 [![Terraform AWS Documentation](https://img.shields.io/badge/Terraform%20AWS-Documentation-623CE4?logo=terraform)](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 [![Terraform Documentation](https://img.shields.io/badge/Terraform-Documentation-623CE4?logo=terraform)](https://www.terraform.io/docs/index.html)
-[![GitHub](https://img.shields.io/badge/GitHub-terraform--modules--registry-181717?logo=github)](https://github.com/team-tech-challenge/terraform-modules-remotes)
 
 ### This repository contains Terraform modules for AWS resources.
 
@@ -15,7 +14,7 @@ The repository is structured as follows:
 
 
 ```
-.
+./
 ├── LICENSE
 ├── README.md
 ├── aws_api_gateway_deployment
@@ -120,14 +119,18 @@ The repository is structured as follows:
 │   ├── output.tf
 │   ├── variables.tf
 │   └── version.tf
-└── aws_security_group
-    ├── README.md
+├── aws_security_group
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
+└── aws_vpc
     ├── main.tf
     ├── output.tf
     ├── variables.tf
     └── version.tf
 ```
-
 
 ##  **Modules**
 
@@ -195,3 +198,43 @@ The repository is structured as follows:
 * This module creates the resources for an AWS Security Group:
     * Security Group:
         * [aws_security_group](./aws_security_group)
+
+### ***Modules VPC***
+
+* This module creates the resources for an AWS VPC:
+    * VPC:
+        * [aws_vpc](./aws_vpc)## Requirements
+
+### ***Modules Subnet***
+
+* This module creates the resources for an AWS Subnet:
+    * Subnet:
+        * [aws_subnet](./aws_subnets)
+
+
+### ***Modules Route Table***
+
+* This module creates the resources for an AWS Route Table:
+    * Route Table:
+        * [aws_route_table](./aws_route_table)
+
+
+### ***Modules Internet Gateway***
+
+* This module creates the resources for an AWS Internet Gateway:
+    * Internet Gateway:
+        * [aws_internet_gateway](./aws_internet_gateway)
+
+
+### ***Modules NAT Gateway***
+
+* This module creates the resources for an AWS NAT Gateway:
+    * NAT Gateway:
+        * [aws_nat_gateway](./aws_nat_gateway)
+
+
+### ***Modules Network ACL***
+
+* This module creates the resources for an AWS Network ACL:
+    * Network ACL:
+        * [aws_network_acl](./aws_network_acl)
