@@ -1,11 +1,5 @@
-variable "create_route_table_public" {
-  description = "Flag to create route tables for public subnets"
-  type        = bool
-  default     = true
-}
-
-variable "create_route_table_private" {
-  description = "Flag to create route tables for private subnets"
+variable "create_route_table" {
+  description = "Flag to create route tables"
   type        = bool
   default     = true
 }

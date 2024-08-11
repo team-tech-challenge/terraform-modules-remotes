@@ -31,8 +31,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_cidr_block"></a> [cidr\_block](#input\_cidr\_block) | The CIDR block for the route | `string` | `""` | no |
-| <a name="input_create_route_table_private"></a> [create\_route\_table\_private](#input\_create\_route\_table\_private) | Flag to create route tables for private subnets | `bool` | `true` | no |
-| <a name="input_create_route_table_public"></a> [create\_route\_table\_public](#input\_create\_route\_table\_public) | Flag to create route tables for public subnets | `bool` | `true` | no |
+| <a name="input_create_route_table"></a> [create\_route\_table](#input\_create\_route\_table) | Flag to create route tables | `bool` | `true` | no |
 | <a name="input_destination_cidr_block"></a> [destination\_cidr\_block](#input\_destination\_cidr\_block) | The destination CIDR block for the private route table | `string` | `""` | no |
 | <a name="input_internet_gateway_id"></a> [internet\_gateway\_id](#input\_internet\_gateway\_id) | The ID of the internet gateway for the public route table | `string` | `null` | no |
 | <a name="input_name_prefix"></a> [name\_prefix](#input\_name\_prefix) | Prefix for route table names | `string` | `null` | no |

@@ -1,5 +1,5 @@
 resource "aws_route_table" "public" {
-  count  = var.create_route_table_public ? 1 : 0
+  count  = var.create_route_table ? 1 : 0
   vpc_id = var.vpc_id
 
   dynamic "route" {
@@ -17,7 +17,7 @@ resource "aws_route_table" "public" {
 }
 
 resource "aws_route_table" "private" {
-  count  = var.create_route_table_private ? 1 : 0
+  count  = var.create_route_table ? 1 : 0
   vpc_id = var.vpc_id
 
   dynamic "route" {
@@ -35,14 +35,14 @@ resource "aws_route_table" "private" {
 }
 
 resource "aws_route_table_association" "public" {
-  count = var.create_route_table_public ? length(var.public_subnet_ids) : 0
+  count = var.create_route_table ? length(var.public_subnet_ids) : 0
 
   subnet_id      = element(var.public_subnet_ids, count.index)
   route_table_id = aws_route_table.public[0].id
 }
 
 resource "aws_route_table_association" "private" {
-  count = var.create_route_table_private ? length(var.private_subnet_ids) : 0
+  count = var.create_route_table ? length(var.private_subnet_ids) : 0
 
   subnet_id      = element(var.private_subnet_ids, count.index)
   route_table_id = aws_route_table.private[0].id
