@@ -2,9 +2,13 @@ resource "aws_route_table" "public" {
   count  = var.create_route_table ? 1 : 0
   vpc_id = var.vpc_id
 
-  route {
-    cidr_block = var.cidr_block
-    gateway_id = var.internet_gateway_id
+  dynamic "route" {
+    for_each = var.cidr_block != "" && var.internet_gateway_id != "" ? [1] : []
+
+    content {
+      cidr_block = var.cidr_block
+      gateway_id = var.internet_gateway_id
+    }
   }
 
   tags = merge(var.tags, {
@@ -16,9 +20,13 @@ resource "aws_route_table" "private" {
   count  = var.create_route_table ? 1 : 0
   vpc_id = var.vpc_id
 
-  route {
-    cidr_block     = var.cidr_block
-    nat_gateway_id = var.nat_gateway_id
+  dynamic "route" {
+    for_each = var.cidr_block != "" && var.nat_gateway_id != "" ? [1] : []
+
+    content {
+      cidr_block     = var.cidr_block
+      nat_gateway_id = var.nat_gateway_id
+    }
   }
 
   tags = merge(var.tags, {
