@@ -1,4 +1,4 @@
-# aws_api_gateway_method
+# Remote Module: aws_api_gateway_method
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements

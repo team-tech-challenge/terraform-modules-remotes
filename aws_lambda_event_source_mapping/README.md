@@ -1,4 +1,4 @@
-# aws_lambda_event_source_mapping
+# Remote Module: aws_lambda_event_source_mapping
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements

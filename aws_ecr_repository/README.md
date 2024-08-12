@@ -1,3 +1,5 @@
+# Remote Module: aws_ecr_repository
+
 ## Requirements
 
 | Name | Version |

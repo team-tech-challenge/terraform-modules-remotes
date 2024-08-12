@@ -1,4 +1,4 @@
-# aws_lambda_permission
+# Remote Module: aws_lambda_permission
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
