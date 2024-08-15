@@ -11,9 +11,9 @@ resource "aws_lb_target_group" "this" {
 
   health_check {
     enabled  = var.target_groups[count.index].health_check_enabled
-    path     = lookup(var.target_groups[count.index], "health_check_path", null)
-    port     = lookup(var.target_groups[count.index], "health_check_port", null)
-    protocol = lookup(var.target_groups[count.index].health_check_protocol, var.target_groups[count.index].protocol)
+    path     = var.target_groups[count.index].health_check_path != null ? var.target_groups[count.index].health_check_path : null
+    port     = var.target_groups[count.index].health_check_port != null ? var.target_groups[count.index].health_check_port : null
+    protocol = var.target_groups[count.index].health_check_protocol != null ? var.target_groups[count.index].health_check_protocol : var.target_groups[count.index].protocol
   }
 
   deregistration_delay = lookup(var.target_groups[count.index], "deregistration_delay", 300)
