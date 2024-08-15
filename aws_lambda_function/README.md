@@ -1,4 +1,4 @@
-# aws_lambda_function
+# Remote Module: aws_lambda_function
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements

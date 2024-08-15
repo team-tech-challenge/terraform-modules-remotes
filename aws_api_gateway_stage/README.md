@@ -1,4 +1,4 @@
-# aws_api_gateway_stage
+# Remote Module: aws_api_gateway_stage
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements

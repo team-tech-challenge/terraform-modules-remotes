@@ -1,4 +1,4 @@
-# aws_dynamodb_table
+# Remote Module: aws_dynamodb_table
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
