@@ -2,7 +2,7 @@ variable "target_groups" {
   description = "List of target group configurations"
   type = list(object({
     name_prefix           = string
-    vpc_id                = string
+    vpc_id                = optional(string)
     protocol              = string
     port                  = number
     health_check_enabled  = bool
@@ -21,4 +21,10 @@ variable "tags" {
   default = {
     ManagedBy = "Terraform"
   }
+}
+
+variable "create_target_group" {
+  description = "Create AWS LB Target Group"
+  type        = bool
+  default     = false
 }
