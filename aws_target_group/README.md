@@ -27,8 +27,9 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_create_target_group"></a> [create\_target\_group](#input\_create\_target\_group) | Create AWS LB Target Group | `bool` | `false` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to all resources | `map(string)` | <pre>{<br>  "ManagedBy": "Terraform"<br>}</pre> | no |
-| <a name="input_target_groups"></a> [target\_groups](#input\_target\_groups) | List of target group configurations | <pre>list(object({<br>    name_prefix           = string<br>    vpc_id                = string<br>    protocol              = string<br>    port                  = number<br>    health_check_enabled  = bool<br>    health_check_path     = optional(string)<br>    health_check_port     = optional(string)<br>    health_check_protocol = optional(string)<br>    target_type           = optional(string)<br>    deregistration_delay  = optional(number)<br>  }))</pre> | `[]` | no |
+| <a name="input_target_groups"></a> [target\_groups](#input\_target\_groups) | List of target group configurations | <pre>list(object({<br>    name_prefix           = string<br>    vpc_id                = optional(string)<br>    protocol              = string<br>    port                  = number<br>    health_check_enabled  = bool<br>    health_check_path     = optional(string)<br>    health_check_port     = optional(string)<br>    health_check_protocol = optional(string)<br>    target_type           = optional(string)<br>    deregistration_delay  = optional(number)<br>  }))</pre> | `[]` | no |
 
 ## Outputs
 
