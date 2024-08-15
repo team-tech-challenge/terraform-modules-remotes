@@ -1,5 +1,5 @@
 resource "aws_lb_target_group" "this" {
-  count = var.create_target_group ? length(var.target_groups) : 0
+  count = var.create_target_group && length(var.target_groups) > 0 ? length(var.target_groups) : 0
 
   name_prefix = substr(var.target_groups[count.index].name_prefix, 0, 6)
 
