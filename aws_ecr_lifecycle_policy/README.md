@@ -1,5 +1,6 @@
 # Remote Module: aws_ecr_lifecycle_policy
 
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 

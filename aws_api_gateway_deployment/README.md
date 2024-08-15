@@ -1,4 +1,4 @@
-# # Remote Module: aws_api_gateway_deployment
+# Remote Module: aws_api_gateway_deployment
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
