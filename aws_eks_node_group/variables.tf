@@ -6,8 +6,8 @@ variable "cluster_name" {
 
 variable "node_role_arn" {
   description = "The ARN of the IAM role that provides permissions for the EKS node group"
-  type        = string
-  default     = ""
+  type        = list(string)
+  default     = []
 }
 
 variable "subnet_ids" {
