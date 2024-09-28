@@ -8,7 +8,6 @@ resource "aws_cognito_user_pool" "this" {
   email_verification_message = var.email_verification_message
   sms_verification_message   = var.sms_verification_message
   mfa_configuration          = var.mfa_configuration
-  deletion_protection        = var.deletion_protection
 
   password_policy {
     minimum_length    = var.password_minimum_length
