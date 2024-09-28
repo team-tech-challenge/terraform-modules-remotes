@@ -17,6 +17,13 @@ variable "memory_size" {
   default     = 128
 }
 
+variable "architectures" {
+  type        = list(string)
+  description = "The list of architectures supported by the function.Options are x86_64 and arm64."
+  default     = null
+}
+
+
 variable "timeout" {
   type        = number
   description = "The maximum execution time of the Lambda function in seconds."
