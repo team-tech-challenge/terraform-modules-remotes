@@ -67,7 +67,7 @@ variable "password_require_symbols" {
 variable "tags" {
   type        = map(string)
   description = "A map of tags to assign to the Cognito User Pool."
-  default     = {
+  default = {
     ManagedBy = "Terraform"
   }
 }
@@ -75,5 +75,11 @@ variable "tags" {
 variable "create_aws_cognito_user_pool" {
   type        = bool
   description = "Whether to create the Cognito User Pool."
+  default     = false
+}
+
+variable "deletion_protection" {
+  type        = bool
+  description = "Whether to enable deletion protection for the Cognito User Pool."
   default     = false
 }
