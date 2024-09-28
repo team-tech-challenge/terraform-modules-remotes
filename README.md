@@ -7,7 +7,6 @@
 [![Terraform Documentation](https://img.shields.io/badge/Terraform-Documentation-623CE4?logo=terraform)](https://www.terraform.io/docs/index.html)
 [![GitHub](https://img.shields.io/badge/GitHub-terraform--modules--registry-181717?logo=github)](https://github.com/team-tech-challenge/terraform-modules-remotes)
 
-
 ### This repository contains Terraform modules for AWS resources.
 
 ##  **Structure of the Repository**
