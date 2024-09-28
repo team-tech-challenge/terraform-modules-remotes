@@ -8,5 +8,4 @@ resource "aws_cognito_user_pool_client" "this" {
   access_token_validity         = var.access_token_validity
   id_token_validity             = var.id_token_validity
   refresh_token_validity        = var.refresh_token_validity
-  prevent_user_existence_errors = var.prevent_user_existence_errors
 }
