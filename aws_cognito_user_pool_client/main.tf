@@ -8,4 +8,11 @@ resource "aws_cognito_user_pool_client" "this" {
   access_token_validity  = var.access_token_validity
   id_token_validity      = var.id_token_validity
   refresh_token_validity = var.refresh_token_validity
+
+  explicit_auth_flows = [
+    "ALLOW_USER_PASSWORD_AUTH",
+    "ALLOW_REFRESH_TOKEN_AUTH",
+    "ALLOW_CUSTOM_AUTH",
+    "ALLOW_USER_SRP_AUTH"
+  ]
 }

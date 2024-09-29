@@ -23,7 +23,6 @@ variable "architectures" {
   default     = null
 }
 
-
 variable "timeout" {
   type        = number
   description = "The maximum execution time of the Lambda function in seconds."
