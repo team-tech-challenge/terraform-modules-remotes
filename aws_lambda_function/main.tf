@@ -7,6 +7,7 @@ resource "aws_lambda_function" "this" {
   memory_size      = var.memory_size
   timeout          = var.timeout
   handler          = var.handler
+  architectures    = var.architectures
   description      = var.description
   image_uri        = var.image_uri
   tags             = merge(var.tags)

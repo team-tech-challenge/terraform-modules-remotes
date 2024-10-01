@@ -54,6 +54,18 @@ The repository is structured as follows:
 │   ├── output.tf
 │   ├── variables.tf
 │   └── versions.tf
+├── aws_cognito
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── versions.tf
+├── aws_cognito_user_pool_client
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── versions.tf
 ├── aws_database_subnet_group
 │   ├── README.md
 │   ├── main.tf
@@ -90,6 +102,39 @@ The repository is structured as follows:
 │   ├── output.tf
 │   ├── variables.tf
 │   └── version.tf
+├── aws_eks_addons
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
+├── aws_eks_cluster
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
+├── aws_eks_node_group
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
+├── aws_iam_role
+│   ├── README.md
+│   ├── datasource.tf
+│   ├── locals.tf
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
+├── aws_iam_role_policy
+│   ├── README.md
+│   ├── locals.tf
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
 ├── aws_internet_gateway
 │   ├── README.md
 │   ├── main.tf
@@ -114,6 +159,18 @@ The repository is structured as follows:
 │   ├── output.tf
 │   ├── variables.tf
 │   └── version.tf
+├── aws_listener
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
+├── aws_load_balancer
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
 ├── aws_nat_gateway
 │   ├── README.md
 │   ├── main.tf
@@ -121,6 +178,18 @@ The repository is structured as follows:
 │   ├── variables.tf
 │   └── version.tf
 ├── aws_network_acl
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
+├── aws_route53_record
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
+├── aws_route53_zone
 │   ├── README.md
 │   ├── main.tf
 │   ├── output.tf
@@ -151,6 +220,12 @@ The repository is structured as follows:
 │   ├── variables.tf
 │   └── version.tf
 ├── aws_subnets
+│   ├── README.md
+│   ├── main.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   └── version.tf
+├── aws_target_group
 │   ├── README.md
 │   ├── main.tf
 │   ├── output.tf
@@ -270,3 +345,30 @@ The repository is structured as follows:
 * This module creates the resources for an AWS Network ACL:
     * Network ACL:
         * [aws_network_acl](./aws_network_acl)
+
+### ***Modules Cognito***
+
+* This module creates the resources for an AWS Cognito:
+    * Cognito User Pool:
+        * [aws_cognito](./aws_cognito)
+    * Cognito User Pool Client:
+        * [aws_cognito_user_pool_client](./aws_cognito_user_pool_client)
+
+### ***Modules EKS***
+
+* This module creates the resources for an AWS EKS:
+    * EKS Cluster:
+        * [aws_eks_cluster](./aws_eks_cluster)
+    * EKS Node Group:
+        * [aws_eks_node_group](./aws_eks_node_group)
+    * EKS Addons:
+        * [aws_eks_addons](./aws_eks_addons)
+
+
+### ***Modules Route53***
+
+* This module creates the resources for an AWS Route53:
+    * Route53 Zone:
+        * [aws_route53_zone](./aws_route53_zone)
+    * Route53 Record:
+        * [aws_route53_record](./aws_route53_record)
