@@ -31,5 +31,5 @@ resource "random_password" "this" {
   count            = var.create_db_instance ? 1 : 0
   length           = 21
   special          = true
-  override_special = "!@#$%^&*()_+"
+  override_special = "!#$%^&*()_+"
 }
